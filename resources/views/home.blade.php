@@ -87,6 +87,9 @@ https://templatemo.com/tm-558-klassy-cafe
                 
                     @auth
                     <li class="scroll-to-section"><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+                    <li><x-app-layout>
+                        </x-app-layout>  
+                    </li>
                     @else
                     <li class="scroll-to-section"><a href="{{ route('login') }}">Log in</a></li>
 

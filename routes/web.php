@@ -16,10 +16,13 @@ use App\Http\Controllers\homeControl;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get("/home",[homeControl::class,"index"]);
+
+Route::get("/redirect",[homeControl::class,"redirectFunct"]);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
