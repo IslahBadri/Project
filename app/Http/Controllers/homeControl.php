@@ -7,9 +7,12 @@ use Illuminate\Support\Facades\Auth;
 
 class homeControl extends Controller
 {
-    function index()
-    {
+    function index(){
         return view("home");
+    }
+
+    function viewp(){
+        return view("viewp");
     }
 
     function redirectFunct()
@@ -18,7 +21,7 @@ class homeControl extends Controller
 
         if($typeuser=='1')
         {
-            return view('adminpage');
+            return view('admin.adminpage');
         }
 
         else
@@ -26,5 +29,4 @@ class homeControl extends Controller
             return view('home');
         }
     }
-
 }
