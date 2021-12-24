@@ -11,7 +11,7 @@ class adminControl extends Controller
     public function project(){
         return view("admin.createp");
     }
-
+    
     function monitor()
     {
         $data=Project::all();

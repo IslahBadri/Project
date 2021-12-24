@@ -15,6 +15,10 @@ class homeControl extends Controller
         return view("viewp");
     }
 
+    function updatep(){
+        return view("updatep");
+    }
+
     function redirectFunct()
     {
         $typeuser=Auth::user()->usertype;

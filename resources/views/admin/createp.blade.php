@@ -31,9 +31,11 @@
                       <div class="form-group">
                       <h4 class="card-title">Project Leader</h4>
                      
-                      @foreach($data as $data)
-                        <input type="radio" class="form-check-input" name="name"  value="$data->name" > {{$data->name}} <br></br>
-                    @endforeach
+                      
+                        <input type="radio" class="form-check-input" name="name"  value="$data->name" > Project Leader 1 <br></br>
+                        <input type="radio" class="form-check-input" name="name"  value="$data->name" > Project Leader 2 <br></br>
+                        <input type="radio" class="form-check-input" name="name"  value="$data->name" > Project Leader 3 <br></br>
+                   
                                 
                                 <i class="input-helper"></i></label>
                       </div>

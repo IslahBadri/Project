@@ -24,6 +24,8 @@ Route::get("/",[homeControl::class,"index"]);
 
 Route::get("/userproject",[homeControl::class,"viewp"]);
 
+Route::get("/details",[homeControl::class,"updatep"]);
+
 Route::get("/redirect",[homeControl::class,"redirectFunct"]);
 
 

@@ -40,24 +40,30 @@ https://templatemo.com/tm-558-klassy-cafe
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{url('/')}}" class="active">Home</a></li>
                             <div style="position: relative; top: 60px; centre: -150px">
-    <h2>Assigned Project </h2>
+    <h2>Details</h2>
     <table  border="3px">
         <tr>
             <th style="padding: 30px">Project ID</th>
             <th style="padding: 30px">Project</th>
-            <th style="padding: 30px">Project Leader</th>
-            <th style="padding: 30px">Project Stage</th>
-            <th style="padding: 30px">Project Status</th>
-            <th style="padding: 30px">Actions</th>
+            <th style="padding: 30px">Project Members</th>
+            <th style="padding: 30px">Project Start Date</th>
+            <th style="padding: 30px">Project End Date</th>
+            <th style="padding: 30px">Duration</th>
+            <th style="padding: 30px">Cost</th>
+            <th style="padding: 30px">Client</th>
+            <th style="padding: 30px">Update</th>
         </tr>
       
         <tr align="center">
             <td>1</td>
             <td>Twitter Text Analytics</td>
-            <td>Yan</td>
-            <td>Inception</td>
-            <td>On track</td>
-            <td><a href="{{url('/details')}}">Update</a></td>
+            <td><input type="text" id="fname" name="fname"><br></td>
+            <td><input type="text" id="fname" name="fname"><br></td>
+            <td><input type="text" id="fname" name="fname"><br></td>
+            <td><input type="text" id="fname" name="fname"><br></td>
+            <td><input type="text" id="fname" name="fname"><br></td>
+            <td><input type="text" id="fname" name="fname"><br></td>
+            <td><input type="submit" value="Save"></td>
         </tr>
        
     </table><br/><br/>
@@ -81,9 +87,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                     @auth
                                     
-                                       <li> <x-app-layout>
-
-                                       </x-app-layout>
+                    
                                     </li>
                                 @else
                                  <li><a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a></li>
